@@ -1,9 +1,9 @@
 import { serve } from "https://deno.land/std/http/server.ts";
 
-const UUID: string = Deno.env.get("UUID") || "393c87a1-0c18-40ad-be2d-b83ac0543ee5";
+const UUID: string = Deno.env.get("UUID") || "73f5608e-a4b3-4d7e-96ba-eeb2418b25eb";
 const SUB_PATH: string = Deno.env.get("SUB_PATH") || "sub";  //获取订阅路径
 const XPATH: string = Deno.env.get("XPATH") || "xhttp";      // 节点路径
-const DOMAIN: string = Deno.env.get("DOMAIN") || "";         // deno分配的域名必填，不带https://前缀，例如：xxxx.deno.dev      
+const DOMAIN: string = Deno.env.get("DOMAIN") || "examples-hello-world.deno.dev";         // deno分配的域名必填，不带https://前缀，例如：xxxx.deno.dev      
 const NAME: string = Deno.env.get("NAME") || "Deno";         // 名称
 const PORT: number = parseInt(Deno.env.get("PORT") || "3000"); 
 
